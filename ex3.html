@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html ng-app>
+	<head>
+		<title></title>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+	</head>
+	<body>
+		<h2>Review</h2>
+		<blockquote>
+			<b>Stars {{stars}}</b>
+			<p>{{body}}</p>
+			<cite>{{author}}</cite>
+		</blockquote>
+		<form>
+			<h4>Give your review!</h4>
+			<p>
+				<select ng-model="stars">
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+				</select>
+			</p>
+			<p>
+				<textarea ng-model="body">
+					
+				</textarea>
+			</p>
+			<p>
+				<input ng-model="author">
+			</p>
+			<button>Submit</button>
+		</form>
+	</body>
+</html>
